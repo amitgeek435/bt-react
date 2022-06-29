@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from "./logo.svg";
+import "./App.css";
+import Lcard from "./component/Lcard";
+import ComA from "./component/ComA";
+import ComB from "./component/ComB";
+import ComC from "./component/ComC";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1 className="h2 text-center text-primary my-5 shadow p-3 mb-5 bg-white rounded">
+        Hello BT-REACT
+      </h1>
+      <div className="container">
+        <Lcard />
+        <ComA />
+        <ComB />
+        <ComC />
+      </div>
+    </>
   );
 }
 
