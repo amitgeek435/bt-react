@@ -1,4 +1,5 @@
+import ComB from "./ComB";
 const ComA = () => {
-  return <h1>Hello CompA</h1>;
+  return <ComB />;
 };
 export default ComA;

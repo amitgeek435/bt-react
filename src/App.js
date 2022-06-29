@@ -1,9 +1,13 @@
-// import logo from "./logo.svg";
 import "./App.css";
 import Lcard from "./component/Lcard";
 import ComA from "./component/ComA";
-import ComB from "./component/ComB";
-import ComC from "./component/ComC";
+// import logo from "./logo.svg";
+// import ComB from "./component/ComB";
+// import ComC from "./component/ComC";
+import { createContext } from "react";
+
+const Fname = createContext();
+const Lname = createContext();
 
 function App() {
   return (
@@ -13,12 +17,15 @@ function App() {
       </h1>
       <div className="container">
         <Lcard />
-        <ComA />
-        <ComB />
-        <ComC />
+        <Fname.Provider value={"abc"}>
+          <Lname.Provider value={"xyz"}>
+            <ComA />
+          </Lname.Provider>
+        </Fname.Provider>
       </div>
     </>
   );
 }
 
 export default App;
+export { Fname, Lname };
