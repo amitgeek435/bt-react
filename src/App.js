@@ -5,6 +5,7 @@ import ComA from "./component/ComA";
 // import ComB from "./component/ComB";
 // import ComC from "./component/ComC";
 import { createContext } from "react";
+import LuseEffect from "./component/LuseEffect";
 
 const Fname = createContext();
 const Lname = createContext();
@@ -22,6 +23,7 @@ function App() {
             <ComA />
           </Lname.Provider>
         </Fname.Provider>
+        <LuseEffect />
       </div>
     </>
   );
